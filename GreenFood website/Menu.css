@@ -1,0 +1,208 @@
+/* import pakges */
+/* font-family: 'Nunito', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* font-family: 'Nanum Pen Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+/*font-family: 'Lobster', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'PT Sans Narrow', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans+Narrow:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    /* menu bar space between */
+    justify-content: space-between;
+    font-size: 17px;
+    padding: 20px 10px;
+    background-color: rgb(238, 255, 212);
+    font-family: 'Nunito', sans-serif;
+}
+.logo img{
+    position: relative;
+    left:4px;
+    max-width: 100px;
+    height: auto;
+    /* padding-left: 15px; */
+}
+.navmenu{
+    display: flex;
+}
+.navmenu li{
+    padding: 0;
+}
+.navmenu a{
+    padding: 7px 20px;
+    margin: 15px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    background-color:#82b682;
+    color: white;
+    border-radius: 10px;
+}
+.navmenu .active{
+    /* Home page active now */
+    background-color:#82b682;
+    color: white;
+    border-radius: 10px;
+}
+/* Contact button */
+.nav-icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.nav-icon .btn{
+    color: white;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #82b682;
+    padding: 10px 30px;
+    background-color:#82b682;
+    border-radius: 30px;
+    margin-right: 15px;
+    /* change property values smoothly, over .42s */
+    /* ease - specifies a transition effect with a slow start, then fast, then end slowly */
+    transition: all .42s ease;
+}
+.nav-icon .btn:hover{
+    /* when the mouse over it will increases the size of an button*/
+    transform: scale(1.1);
+}
+/* my work */
+body{
+    background-image:url('healthy food.png');
+    background-repeat:repeat;
+    background-size: 30%; 
+    background-attachment: fixed; 
+    width: 100%;
+    margin-top: 150px;
+}
+
+h1{/*category*/
+    color: rgb(74, 68, 54);
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-weight:lighter; 
+    width:fit-content;
+    margin-left: auto; margin-right: auto;
+    /* Highlight  */
+    background:linear-gradient(
+       to bottom,
+       transparent 50%,
+       #165a2d4f 50%
+   );
+}
+
+#price{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 25px;
+    display: inline;
+    color: rgb(44, 100, 69);
+}
+
+td{/*prices of packages*/
+    font-size: 15px;
+}
+
+.card {
+    display:inline-block;
+    width: 190px;
+    height: 270px;
+    padding: .8em;
+    background: #d7f0dc5b;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-left: 23%;
+   }
+   
+   .card-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+   }
+   
+   .card-info {
+    padding-top: 10%;
+   }
+   
+   svg {
+    width: 20px;
+    height: 20px;
+   }
+   
+   .card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: 'PT Sans Narrow', sans-serif;
+     width:auto; 
+     color: rgb(70, 62, 62);
+     
+   }
+   
+   .text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+    color: rgb(204, 169, 124);
+    text-align: center;
+    font-family:monospace;
+   }
+   
+   /*Hover*/
+   .card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(63, 226, 77, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+   }
+
+
+   
+.d{/* drinks table */
+    height: 80px ; width: 250px; 
+    background-color: #d7f0dc5b; ;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: auto; margin-right: auto;
+}
+h5 {/*drinks names*/
+    font-family: 'PT Sans Narrow', sans-serif;
+    display: inline;
+    color: rgb(44, 100, 69);
+}
+ed{/*drinks price*/
+    font-style: italic;
+}
+   

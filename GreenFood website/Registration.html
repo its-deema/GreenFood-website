@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+
+    <!-- the icon in browser's title bar -->
+    <link rel="icon" href="green foodi.ico">
+    <title>Green food - Registration</title>
+
+    <!-- Event to make sure the user want to submit -->
+    <script>
+       function clicked() {
+       if (confirm('Do you want to submit?')) {
+           input.submit();
+       }
+        else {
+           return false;
+       }
+      }
+
+    </script>
+</head>
+<body>
+<header>
+    <!-- logo in menu bar -->
+    <div class="logo">
+        <img src="green food.png">
+    </div>
+
+    <ul class="navmenu">
+        <!-- here we link the pages together -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Meals</a></li>
+        <li><a href="#" class="active">Registration</a></li>
+    </ul>
+
+    <div class="nav-icon">
+        <!-- To send an Email -->
+        <a href="mailto:GreenFood@gmail.com" class="btn">Contact</a>
+    </div>
+</header>
+
+<!-- Form section -->
+<div class="container">
+    <div class="title">Registration</div>
+    <!-- Here i will change the action & method -->
+    <form action="data.php" method="post"> 
+       <div class="user-details">
+        <div class="input-box">
+            <label class="qustions">First Name :</label>
+            <input type="text" id="fn" name="fn" placeholder="Enter your first name" required>
+        </div>
+        <div class="input-box">
+            <label class="qustions">Last Name :</label>
+            <input type="text" id="ln" name="ln" placeholder="Enter your last name" required>
+        </div>
+        <div class="input-box">
+            <label class="qustions">Email :</label>
+            <input type="email" name="mail"placeholder="Enter your email" required>
+        </div>
+        <div class="input-box">
+            <label class="qustions">Phone number :</label>
+            <input type="text" name="ph" placeholder="Enter your phone number" minlength="10" maxlength="10" required>
+        </div>
+        <div class="input-box">
+            <label class="qustions">Most appropriate  package for you  :</label>
+            <div class="select">
+             <select name="packages" style="width: 90%; color:#686868; border-color:#ccc; border-radius: 5px;">
+                <option id="fir" name="pack" value="Bluking-package">
+                <label for="fir">Bluking package</label>
+                <option id="sec" name="pack" value="sliming-package">
+                <label >sliming package</label>
+                <option id="thir" name="pack" value="Both">
+                <label>Both</label>
+             </select>
+            </div>
+        </div>
+        <div class="input-box">
+            <label class="qustions">Starting date :</label>
+            <input type="date" name="D">
+        </div>
+        <!-- Package section -->
+        <div class="input-box-p">
+            <label class="qustions">I want this package for :</label>
+            <input type="radio" id="2w" name="period" value="2 Weeks">
+            <label class="qustions" for="2w">Two weeks</label>
+            <input type="radio" id="1m" name="period" value="1 Month">
+            <label class="qustions" for="1m">One month</label>
+        </div>
+        <!-- Quantity section -->
+        <div class="input-box-q">
+            <label class="qustions">Quantity :</label>
+            <input type="radio" id="1meal" name="quantity" value="1 Meal" required>
+            <label class="qustions" for="1meal">One meal</label>
+            <input type="radio" id="2meals" name="quantity" value="2 Meals" required>
+            <label class="qustions" for="2meals">Two meals</label>
+            <input type="radio" id="3meals" name="quantity" value="3 Meals" required>
+            <label class="qustions" for="3meals">Three meals</label>
+        </div>
+        <!-- Gender section -->
+        <div class="input-box-g">
+            <label class="qustions">Gender :</label>
+            <input type="radio" id="m" name="gen" value="male" required>
+            <label class="qustions" for="m">Male</label>
+            <input type="radio" id="f" name="gen" value="female" required>
+            <label class="qustions" for="f">Female</label>
+            <input type="radio" id="n" name="gen" value="don't want to ans" required>
+            <label class="qustions" for="n">Prefer not to say</label>
+        </div>
+       </div>
+       <!-- button to submit -->
+       <div class="button">
+        <input type="submit" value="Register" onclick="return clicked();">
+       </div>
+    </form>
+
+</div>
+
+</div>
+
+<footer>
+    <!-- "&copy" for copy icon -->
+    <p>* Copyright &copy; Green Food</p>
+</footer>
+
+    
+</body>
+</html>

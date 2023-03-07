@@ -1,0 +1,182 @@
+/* import pakges */
+/* font-family: 'Nunito', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* font-family: 'Nanum Pen Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image:url('healthy\ food.png');
+    background-repeat:repeat;
+    background-size: 30%;
+    background-attachment: fixed;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    /* menu bar space between */
+    justify-content: space-between;
+    font-size: 17px;
+    padding: 20px 10px;
+    background-color: rgb(238, 255, 212);
+    font-family: 'Nunito', sans-serif;
+}
+.logo img{
+    position: relative;
+    max-width: 100px;
+    height: auto;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu li{
+    padding: 0;
+}
+.navmenu a{
+    padding: 7px 20px;
+    margin: 15px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    background-color:#82b682;
+    color: white;
+    border-radius: 10px;
+}
+.navmenu .active{
+    /* Home page active now */
+    background-color:#82b682;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Contact button */
+.nav-icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.nav-icon .btn{
+    color: white;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #82b682;
+    padding: 10px 30px;
+    background-color:#82b682;
+    border-radius: 30px;
+    margin-right: 15px;
+    /* change property values smoothly, over .42s */
+    /* ease - specifies a transition effect with a slow start, then fast, then end slowly */
+    transition: all .42s ease;
+}
+.nav-icon .btn:hover{
+    /* when the mouse over it will increases the size of an button*/
+    transform: scale(1.1);
+}
+
+section{
+    margin-bottom: 0;
+    margin: 13% 10%;
+    margin-bottom: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home{
+    font-family: 'Nunito', sans-serif;
+    padding-left: 30px;
+}
+.h-text{
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+.h-text h2{
+    /* "Green Food like no.." text */
+    font-size: 40px;
+    max-width: 60% ;
+    font-family: 'Nanum Pen Script', cursive;
+    /* Highlight  */
+    background:linear-gradient(
+        to bottom,
+        transparent 50%,
+        #fce041 50%
+    );
+}
+
+/* when the screen smaller than 1400px , highlight and font size*/
+@media screen and (max-width: 1400px) {
+    .h-text h2{
+        font-size:30px;
+        max-width:53% ;
+    }
+    .h-text h3{
+        font-size:20px;
+        max-width:70% ;
+    }
+}
+/* when the screen smaller than 1000px , highlight and font size*/
+@media screen and (max-width: 1000px) {
+    .h-text h2{
+        font-size:26px;
+        max-width:60% ;
+    }
+    .h-text h3{
+        font-size:17px;
+        max-width:70% ;
+    }
+}
+.home-img{
+    /* to make the pic next to text */
+   flex-basis:45%;
+}
+.home-img img{
+   max-width: 100%;
+   width: 100%;
+   padding: 6%;
+}
+
+.sign-btn{
+    margin-top: 12px;
+    display: inline-block;
+    align-items: center;
+    color:black;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: rgb(202, 221, 173) ;
+    padding: 12px 30px;
+    /* change property values smoothly, over .42s */
+    /* ease - specifies a transition effect with a slow start, then fast, then end slowly */
+    transition: all .42s ease;
+    border-radius: 5px;
+}
+.sign-btn:hover{
+    background-color:#82b682 ;
+    color: aliceblue;
+}
+
+footer{
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(238, 255, 212);
+    /* to fix the footer in the bottom when the screen get smaller or bigger */
+    position: fixed;
+    padding: 17px;
+    width: 100%;
+    bottom: 0; 
+}
