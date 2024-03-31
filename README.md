@@ -9,14 +9,15 @@ Green Food is designed to be clear, easy to use, and accessible to all users. We
 - **Meals Page:** Menu page showcasing all Green Food restaurant meals with detailed information.
 - **Information Page:** Captures user details and selected package information using PHP sessions and arrays.
 
-## Developer Note
-I worked on implementing the registration page to ensure a seamless user experience aligned with the overall design and functionality of the site.
-
 ## Technologies Used
 - HTML
 - CSS
 - JavaScript
 - PHP
+
+## Developer Note
+I worked on implementing the registration page to ensure a seamless user experience aligned with the overall design and functionality of the site.
+
 
 ## Project Purpose
 This project serves as a demonstration of our skills in web development and understanding of web technologies learned during our Web Technology course at Qassim University .
