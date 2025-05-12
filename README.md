@@ -25,7 +25,8 @@ This project serves as a demonstration of our skills in web development and unde
 Feel free to explore our project and provide feedback. Thank you for visiting our repository!
 
 ## Team members 
-- [@byReema ](https://github.com/byReema)
+- [@DeemaAlnasser](https://github.com/its-deema)
+- [@ReemaAlnasser](https://github.com/byReema)
 - Wareef Alolayan
 - Shihanah Albadi
 
